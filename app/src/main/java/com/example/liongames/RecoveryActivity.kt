@@ -46,4 +46,11 @@ class RecoveryActivity : AppCompatActivity() {
         }
     }
 
+    fun backtosignin(view: View) {
+        val inten = Intent (this@RecoveryActivity, SigninActivity::class.java)
+        startActivity(inten)
+        finish()
+    }
+
+
 }
