@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegActivity"
+    android:background="@color/purple"
+    >
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints"
+            android:orientation="vertical">
+
+        <TextView
+             android:id="@+id/textView4"
+             android:layout_width="318dp"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="40dp"
+             android:layout_marginTop="103.05dp"
+             android:layout_marginEnd="53dp"
+             android:text="Создайте аккаунт"
+             android:textAlignment="center"
+             android:textColor="@color/white"
+             android:textSize="32dp"
+             android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:text="Зарегистрируйтесь"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginStart="81dp"
+            android:layout_marginEnd="89dp"
+            android:layout_marginTop="181.05dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="329dp"
+            android:layout_height="70.87dp"
+            android:background="@drawable/login"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/baseline_person_24_dark_purple"
+            android:drawablePadding="15dp"
+            android:hint="Логин или email"
+            android:textColorHint="@color/dark_purple"
+            android:ems="10"
+            android:paddingStart="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="39.25dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="329dp"
+            android:layout_height="70.87dp"
+            android:background="@drawable/regpass"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/baseline_vpn_key_24"
+            android:drawablePadding="15dp"
+            android:hint="Пароль"
+            android:textColorHint="@color/white"
+            android:paddingStart="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="18.91dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="329dp"
+            android:layout_height="70.87dp"
+            android:background="@drawable/confpass"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/baseline_vpn_key_24"
+            android:drawablePadding="15dp"
+            android:hint="Подтверждение пароля"
+            android:textColorHint="@color/white"
+            android:ems="10"
+            android:paddingStart="30dp"
+            android:layout_marginTop="18.91dp"
+            android:layout_marginStart="40dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_width="175dp"
+            android:layout_height="59.73dp"
+            android:background="@drawable/white_button"
+            android:onClick="regaction"
+            android:text="Продолжить"
+            android:textAllCaps="false"
+            android:layout_marginTop="30.25dp"
+            android:layout_marginStart="114dp"
+            />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="186.21dp"
+            android:layout_height="wrap_content"
+            android:text="Уже есть аккаунт?"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="62dp"
+            android:layout_marginStart="41dp"
+            />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="153.19dp"
+                android:layout_height="20dp"
+                android:onClick="backtosignin"
+                android:text="Вернуться назад"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="17dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="-85dp"
+                android:layout_marginBottom="62dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

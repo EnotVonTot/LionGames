@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SigninActivity"
+    android:background="@color/purple">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints" >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:text="С возвращением!"
+                android:textColor="@color/white"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="110.35dp"
+                android:layout_marginStart="57dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo3"
+                android:layout_marginTop="24.4dp"
+                android:layout_marginStart="88dp"
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="241dp"
+                android:layout_height="20.74dp"
+                android:text="Войти"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="13.39dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginEnd="78dp"
+                />
+
+            <EditText
+                android:id="@+id/editTextText3"
+                android:layout_width="329dp"
+                android:layout_height="70.87dp"
+                android:background="@drawable/login"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/baseline_person_24_dark_purple"
+                android:drawablePadding="15dp"
+                android:hint="Логин"
+                android:textColorHint="@color/dark_purple"
+
+                android:ems="10"
+                android:paddingStart="30dp"
+                android:layout_marginTop="49.03dp"
+                android:layout_marginStart="42dp"
+                />
+
+            <EditText
+                android:id="@+id/editTextText4"
+                android:layout_width="329dp"
+                android:layout_height="70.87dp"
+                android:background="@drawable/pass"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/baseline_vpn_key_24"
+                android:drawablePadding="15dp"
+                android:hint="Пароль"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:paddingStart="30dp"
+                android:layout_marginTop="20.25dp"
+                android:layout_marginStart="42dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button5"
+                android:layout_width="175dp"
+                android:layout_height="59.73dp"
+                android:background="@drawable/white_button"
+                android:onClick="topatch"
+                android:text="Продолжить"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="34.42dp"
+                android:layout_marginStart="119dp"
+                />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:text="Забыли пароль>"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginStart="29dp"
+                />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                android:onClick="recover"
+                android:text="Восстановить пароль"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_marginTop="-23dp"
+                android:layout_marginBottom="62dp"
+                android:layout_marginStart="155dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
